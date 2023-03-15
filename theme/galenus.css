@@ -1,0 +1,130 @@
+html {
+    height: 100vh;
+}
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+#desk {
+    position: relative;
+    padding: 1rem 2rem;
+    display: flex;
+    height: calc(100vh - 7rem);
+}
+
+#desk>* {
+    height: 100%;
+    overflow: auto;
+}
+#nav {
+    padding: 1rem 1rem 1rem 0;
+    flex-basis: 17rem;
+    flex-shrink: 0;
+}
+#nav a {
+    padding: 0 1rem;
+}
+#doc {
+    flex-basis: 45rem;
+    flex-shrink: 0;
+    padding: 1rem;
+}
+#pagimage {
+    width: 100%;
+    flex-shrink: 3;
+}
+/* messages */
+
+.availability::before {
+    display: inline;
+
+}
+
+.editionStmt::before {
+    display: inline;
+}
+
+.editor::before {
+    display: inline;
+    content: "Editor: ";
+}
+
+.editorialDecl::before {}
+
+.extent::before::before {
+    display: inline;
+    content: "Size: ";
+}
+
+.funder::before {
+    display: inline;
+
+}
+
+.principal::before {
+    display: inline;
+    content: "Director: ";
+}
+
+.projectDesc::before {
+    display: inline;
+}
+
+caption.revisionDesc::before {
+    display: inline;
+    content: "Revisions";
+}
+
+.samplingDecl {}
+
+.sponsor::before {
+    display: inline;
+    content: "Sponsor: ";
+}
+
+blockquote.lemma::before {
+    display: none;
+}
+
+blockquote.lemma::after {
+    display: none;
+}
+
+span.lb.rule::after {
+    width: 100%;
+    content: "———————————";
+    font-size: inherit;
+    text-align: center;
+    display: block;
+    position: relative;
+}
+
+section[title]::before {
+    display: block;
+    content: attr(title);
+    background-color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+span.pb {
+    display: block;
+    height: 0;
+    margin: 3px 0;
+    font-size: 0;
+    border-top: 1px solid #fff;
+}
+span.pb::after {
+    font-size: 1rem;
+    display: block;
+    float: right;
+    content: "p. " attr(data-page) ;
+}
+span.pb::after {
+    display: block;
+    text-align: right;
+}
+
