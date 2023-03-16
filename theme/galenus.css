@@ -128,3 +128,7 @@ span.pb::after {
     text-align: right;
 }
 
+table.list td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
