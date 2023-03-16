@@ -112,10 +112,21 @@ section[title]::before {
 }
 span.pb {
     display: block;
+    font-weight: normal;
     height: 0;
     margin: 3px 0;
     font-size: 0;
     border-top: 1px solid #fff;
+}
+
+tr {
+    position: relative;
+}
+td span.pb,
+th span.pb  {
+    position: absolute;
+    right: -5rem;
+    width: 100%;
 }
 span.pb::after {
     font-size: 1rem;
