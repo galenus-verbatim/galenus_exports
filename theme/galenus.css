@@ -132,14 +132,30 @@ span.pb::after {
     font-size: 1rem;
     display: block;
     float: right;
-    content: "p. " attr(data-page) ;
+    content: "[" attr(data-page) " K]" ;
 }
 span.pb::after {
     display: block;
     text-align: right;
 }
 
+table.list th,
 table.list td {
-    padding-left: 1rem;
     padding-right: 1rem;
+    text-align: left;
+}
+
+table.list td.lb {
+    height: 1.2rem;
+    text-indent: 0;
+    padding: 0;
+    font-weight: normal;
+    width: 2rem;
+    color: var(--textlo);
+}
+td.lb::before {
+    padding-left: 1ex;
+    margin-right: 2px;
+    font-size: 0.7rem;
+    content: attr(data-line);
 }
