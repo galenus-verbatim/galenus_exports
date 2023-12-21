@@ -5,4 +5,4 @@ Chaîne de correction des textes grecs ("verbatim-grc1") et latins ("verbatim-la
 
 Les fichiers structurés en XML-TEI ont été convertis en docx pour faciliter leur relecture (et également, pour les fichiers latins, leur structuration).
 
-Les fichiers placés dans https://github.com/galenus-verbatim/galenus_scriptorium/tree/main/9_bon, dont le texte a été validé, seront ensuite de nouveau convertis en XML-TEI pour remplacer l'actuel fichier "verbatim-grc1" ou "verbatim-lat1" (voir https://github.com/galenus-verbatim/galenus_cts/tree/master/data).
+Les fichiers placés dans https://github.com/galenus-verbatim/galenus_scriptorium/tree/main/9_bon, dont le texte a été validé, seront ensuite de nouveau convertis en XML-TEI pour remplacer l'actuel fichier "verbatim-grc1" ou "verbatim-lat1" dans https://github.com/galenus-verbatim/galenus_cts/tree/master/data.
